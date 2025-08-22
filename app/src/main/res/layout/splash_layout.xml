@@ -1,20 +1,55 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"android:orientation="vertical"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_margin="20dp"
+    android:orientation="vertical"
+    android:background="#2EE784"
     tools:context=".SplashActivity">
 
     <ImageView
-        android:scaleType="centerCrop"
         android:layout_width="150dp"
         android:layout_height="150dp"
-        android:src="@drawable/img"/>
+        android:scaleType="centerCrop"
+        android:src="@drawable/img" />
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#77000000">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Entrar"
+            android:layout_marginLeft="80dp"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sair"
+            android:layout_marginLeft="80dp"/>
+
+    </LinearLayout>
 
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Mercado Fake"
+        android:text="Não tem usuario?"/>
+
+
 </LinearLayout>
